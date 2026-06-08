@@ -11,79 +11,195 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="site-header">
+      <nav class="nav">
+        <span class="nav-logo">KS</span>
+        <ul class="nav-links">
+          <li><a href="#education">学歴</a></li>
+          <li><a href="#affiliation">所属</a></li>
+          <li><a href="#skills">スキル</a></li>
+          <li><a href="#works">成果物</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
-      <section class="hero">
-        <img src="assets/portfolio-hero.webp" alt="" class="hero-image" />
+      <section class="hero-profile">
         <div class="hero-text">
           <p class="label">Portfolio</p>
           <h1>坂本和優</h1>
-          <p>Kazumasa Sakamoto</p>
+          <p class="hero-sub">Kazumasa Sakamoto</p>
+          <p class="hero-desc">機械エンジニア / ロボット設計</p>
+          <p class="hero-bio">
+            東京科学大学工学院機械系に所属しています。
+            ロボット技術研究会では、主にメカ設計や機構の検討に取り組んでいます。
+          </p>
+        </div>
+        <img
+          class="hero-photo"
+          src="assets/profile.webp"
+          alt="坂本和優のプロフィール写真"
+          width="600"
+          height="800"
+        />
+      </section>
+
+      <section id="education">
+        <div class="section-header">
+          <p class="label">Education</p>
+          <h2>学歴</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2022.4 – 2026.3</div>
+            <div class="timeline-content">
+              <h3>東京科学大学 工学院機械系</h3>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2026.4 –</div>
+            <div class="timeline-content">
+              <h3>東京科学大学 工学院機械系 機械コース</h3>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2>学歴</h2>
-        <div class="card">
-          <h3>学校名・学部学科</h3>
-          <p>東京科学大学工学院機械系(2022.4-2026.3)</p>
-          <p>東京科学大学工学院機械系機械コース(2026.4-)</p>
+      <section id="affiliation">
+        <div class="section-header">
+          <p class="label">Affiliation</p>
+          <h2>所属</h2>
+        </div>
+
+        <div class="affil-grid">
+          <div class="card affil-card">
+            <p class="affil-period">
+              2022.4 –<span class="affil-active">在籍中</span>
+            </p>
+            <h3>ロボット技術研究会</h3>
+            <p>東京科学大学</p>
+          </div>
+          <div class="card affil-card">
+            <p class="affil-period">2025.4 – 2026.3</p>
+            <h3>岡田研究室</h3>
+            <p>東京科学大学 工学院機械系</p>
+          </div>
+
+          <div class="card affil-card">
+            <p class="affil-period">
+              2026.4 –<span class="affil-active">在籍中</span>
+            </p>
+            <h3>難波江研究室</h3>
+            <p>東京科学大学 工学院機械系</p>
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2>所属</h2>
-        <div class="card">
-          <h3>所属サークル・研究室</h3>
-          <p>東京科学大学 ロボット技術研究会(2026.4-)</p>
-          <p>東京科学大学 工学院機械系 岡田研究室(2025.4-2026.3)</p>
-          <p>東京科学大学 工学院機械系 難波江研究室(2026.4-)</p>
+      <section id="skills">
+        <div class="section-header">
+          <p class="label">Skills</p>
+          <h2>使用経験のあるツール・スキル</h2>
         </div>
-      </section>
-
-      <section>
-        <h2>使用経験のあるツール・スキル</h2>
         <div class="skill-grid">
           <div class="card">
             <h3>工作機械</h3>
-            <ul>
-              <li>ボール盤</li>
-              <li>旋盤</li>
-              <li>フライス盤</li>
-              <li>帯鋸</li>
-              <li>レーザー加工機</li>
-              <li>3Dプリンタ</li>
-            </ul>
+            <div class="badge-group">
+              <span class="badge">ボール盤</span>
+              <span class="badge">旋盤</span>
+              <span class="badge">フライス盤</span>
+              <span class="badge">帯鋸</span>
+              <span class="badge">レーザー加工機</span>
+              <span class="badge">3Dプリンタ</span>
+            </div>
           </div>
           <div class="card">
             <h3>CAD・CAM</h3>
-            <ul>
-              <li>Autodesk Inventor</li>
-              <li>Autodesk Fusion</li>
-              <li>Autodesk Inventor CAM</li>
-            </ul>
+            <div class="badge-group">
+              <span class="badge">Autodesk Inventor</span>
+              <span class="badge">Autodesk Fusion</span>
+              <span class="badge">Inventor CAM</span>
+            </div>
           </div>
           <div class="card">
             <h3>プログラミング言語</h3>
-            <ul>
-              <li>c/c++</li>
-              <li>python</li>
-              <li>Matlab</li>
-              <li>HTML/CSS</li>
-              <li>javascript</li>
-              <li>Go</li>
-            </ul>
+            <div class="badge-group">
+              <span class="badge">C/C++</span>
+              <span class="badge">Python</span>
+              <span class="badge">MATLAB</span>
+              <span class="badge">HTML/CSS</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">Go</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section>
-        <h2>成果物</h2>
-        <div class="card">
-          <h3>成果物名</h3>
-          <p>ここに授業や個人制作で作ったものの説明を記入します。</p>
-          <p class="tags">使用技術・制作時期・担当範囲など</p>
+      <section id="works">
+        <div class="section-header">
+          <p class="label">Works</p>
+          <h2>ロボット技術研究会での成果物</h2>
+        </div>
+        <div class="works-grid">
+          <div class="card work-card">
+            <img
+              class="work-image"
+              src="assets/toyputle.jpg"
+              alt="関東春ロボコン2023の成果物"
+              loading="lazy"
+            />
+            <div class="work-info">
+              <p class="work-tag">2023</p>
+              <h3>関東春ロボコン2023</h3>
+              <p>帽子を飛ばす機構のメカ設計</p>
+            </div>
+          </div>
+          <div class="card work-card">
+            <img
+              class="work-image"
+              src="assets/gaudi.png"
+              alt="東海地区交流ロボコン2023"
+              loading="lazy"
+            />
+            <div class="work-info">
+              <p class="work-tag">2023</p>
+              <h3>東海地区交流ロボコン2023</h3>
+              <p>機体前方のアームのメカ設計</p>
+            </div>
+          </div>
+          <div class="card work-card">
+            <img
+              class="work-image"
+              src="assets/nhk2024.jpg"
+              alt="nhk学生ロボコン2024"
+              loading="lazy"
+            />
+            <div class="work-info">
+              <p class="work-tag">2024</p>
+              <h3>NHK学生ロボコン2024</h3>
+              <p>
+                ローラー回収機構のメカ設計、ボールの軌道/転がらないために必要なバックスピンの計算
+              </p>
+            </div>
+          </div>
+          <div class="card work-card">
+            <img
+              class="work-image"
+              src="assets/gachagacha.jpg"
+              alt="工大祭用ガチャガチャ"
+              loading="lazy"
+            />
+            <div class="work-info">
+              <p class="work-tag">2024</p>
+              <h3>工大祭2024</h3>
+              <p>ここに授業や個人制作で作ったものの説明を記入します。</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>© 2024 Kazumasa Sakamoto</p>
+    </footer>
   </body>
 </html>
