@@ -94,7 +94,7 @@ main {
 /* ── Hero + Profile (merged) ── */
 .hero-profile {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 220px;
+  grid-template-columns: minmax(0, 1fr) 280px;
   align-items: stretch;
   overflow: hidden;
   border-radius: 16px;
